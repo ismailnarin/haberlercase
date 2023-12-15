@@ -1,13 +1,124 @@
+html {
+  background-color: #f4f4f4;
+}
 body {
   margin: 0px;
+  text-wrap: nowrap;
+}
+input:focus {
+  outline: none;
+}
+.rightNav {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  column-gap: 16px;
+}
+.navMenu {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0px 45px;
+  width: 100%;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
 }
 .headerContainer {
   display: flex;
   width: 100%;
+  justify-content: center;
+  background-color: #000000;
+  flex-direction: column;
+  align-items: center;
 }
 .headerTop {
-  padding: 16px 0px;
   display: flex;
   width: 74%;
-  background-color: #000000;
+  max-width: 1056px;
+  justify-content: space-between;
+}
+.logo {
+  padding: 16px 20px;
+  background-color: #fb0d1b;
+}
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.search input {
+  padding: 8px 12px;
+  border-radius: 50px;
+  font-size: 13px;
+  border: none;
+  width: 120px;
+}
+.search::after {
+  content: url("assets/image/search.svg");
+  position: absolute;
+  top: 55%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.login {
+  text-wrap: nowrap;
+  cursor: pointer;
+  display: flex;
+  color: white;
+  font-size: 13px;
+  border: 2px solid #4f4f4f;
+  padding: 6px 12px;
+  border-radius: 50px;
+  column-gap: 8px;
+}
+.headerBottom {
+  display: flex;
+  width: 100%;
+  background-color: #888888;
+  justify-content: center;
+  align-items: center;
+  color: White;
+  font-weight: 600;
+  padding: 9px 0px;
+}
+.categories {
+  width: 100%;
+  display: flex;
+  font-size: 14px;
+  justify-content: space-around;
+}
+.container {
+  width: 70%;
+  display: flex;
+  max-width: 1056px;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.banner {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.bannerInner {
+  display: flex;
+  width: 1056px;
+  justify-content: center;
+  padding: 24px 0px;
+}
+.bannerInner img {
+  object-fit: contain;
+  width: 90%;
+}
+.midSlider {
+  display: flex;
+  width: 1056px;
+}
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
 }
