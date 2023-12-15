@@ -1,0 +1,13 @@
+body {
+  margin: 0px;
+}
+.headerContainer {
+  display: flex;
+  width: 100%;
+}
+.headerTop {
+  padding: 16px 0px;
+  display: flex;
+  width: 74%;
+  background-color: #000000;
+}
