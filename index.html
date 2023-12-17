@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="main.css" />
-    <script src="index.js"></script>
+    <link href="assets\font\stylesheet.css" rel="stylesheet" />
   </head>
   <body>
     <div class="headerContainer">
@@ -59,15 +59,45 @@
     </div>
     <div class="mainContainer">
       <div class="leftBanner">
-        <img src="assets\image\bannerleft.png" alt="" />
+        <img
+          style="width: 160px; height: 600px"
+          src="assets\image\bannerleft.png"
+          alt=""
+        />
       </div>
       <div class="midSlider">
         <div class="sliderContainer">
-          <div class="slider"></div>
-          <div class="exchange"></div>
+          <div class="slider">
+            <img id="sliderImage" src="assets\image\slider\1.jpg" alt="" />
+            <div id="sliderNumber"></div>
+          </div>
+          <div class="exchange">
+            <div>Dolar <span style="color: red">&#9650; 19,50</span></div>
+            <div>Euro <span style="color: red">&#9650; 21,55</span></div>
+            <div>Altın <span style="color: green">&#9650; 1267,64</span></div>
+            <div>Bitcoin <span style="color: green">&#9650; 27.881</span></div>
+            <div>Borsa <span style="color: red">&#9660; 4,411</span></div>
+          </div>
           <div class="news">
-            <div></div>
-            <div></div>
+            <div class="newsInner">
+              <img
+                style="width: 175px; height: 100px"
+                src="assets\image\new1.png"
+                alt=""
+              />
+              <div>TFF, Kunts kararını verdi</div>
+            </div>
+            <div class="newsInner">
+              <img
+                style="width: 175px; height: 100px"
+                src="assets\image\new2.png"
+                alt=""
+              />
+              <div>
+                Mahmut Tuncer, yaşadığı korkunç kazayı saniye saniye anlattı:
+                tüm olan biten
+              </div>
+            </div>
           </div>
         </div>
         <div class="midRight">
@@ -75,8 +105,13 @@
         </div>
       </div>
       <div class="rightBanner">
-        <img src="assets\image\bannerleft.png" alt="" />
+        <img
+          style="width: 160px; height: 600px"
+          src="assets\image\bannerleft.png"
+          alt=""
+        />
       </div>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>
