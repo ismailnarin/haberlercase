@@ -37,8 +37,7 @@ input:focus {
 }
 .headerTop {
   display: flex;
-  width: 74%;
-  max-width: 1056px;
+  width: 1056px;
   justify-content: space-between;
 }
 .logo {
@@ -92,11 +91,11 @@ input:focus {
 .categories {
   width: 100%;
   display: flex;
-  font-size: 14px;
+  font-size: calc(8px + 0.3vw);
   justify-content: space-around;
 }
 .container {
-  width: 70%;
+  width: 1056px;
   display: flex;
   max-width: 1056px;
   justify-content: space-between;
@@ -118,6 +117,7 @@ input:focus {
   width: 90%;
 }
 .midSlider {
+  column-gap: 24px;
   display: flex;
   width: 1056px;
 }
@@ -163,4 +163,74 @@ input:focus {
 }
 #sliderNumber span:hover {
   color: red;
+}
+#sliderImage {
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+#sliderImageContainer {
+  transition: transform 0.3s ease;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  max-width: 732px;
+  position: relative;
+}
+.slider img {
+  object-fit: contain;
+  width: 100%;
+  transform: translateX(-100%);
+  transition: all ease 0.3s;
+}
+#prevButton,
+#nextButton {
+  display: flex;
+  position: absolute;
+  z-index: 99999999999;
+  top: 46%;
+  left: 7%;
+  cursor: pointer;
+}
+#nextButton {
+  right: -6%;
+  left: auto;
+}
+.allCategories {
+  font-size: calc(8px + 0.3vw);
+}
+@media (max-width: 1056px) {
+  .leftBanner,
+  .rightBanner {
+    display: none;
+  }
+  .navMenu {
+    display: none;
+  }
+  .headerTop {
+    width: 100%;
+    background-color: #fb0d1b;
+  }
+  .rightNav {
+    display: none;
+  }
+  .headerTop {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 990px) {
+  .midRight {
+    display: none;
+  }
+  .midSlider {
+    justify-content: center;
+  }
+  .sliderContainer {
+    max-width: 732px;
+  }
+}
+@media (max-width: 700px) {
+  .headerBottom {
+    display: none;
+  }
 }
